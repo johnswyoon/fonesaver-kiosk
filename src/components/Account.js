@@ -3,6 +3,9 @@ import { Card, Button, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+
 const Account = () => {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
@@ -32,7 +35,7 @@ const Account = () => {
       </Card>
       <div className="w-100 text-center mt-2">
         <Button variant="link" onClick={handleLogout}>
-          Log Out
+          Log Out <FontAwesomeIcon icon={faSignOutAlt} />
         </Button>
       </div>
     </>

@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 const Home = () => {
   return (
     <Container>
-      <h1>Kiosk</h1>
+      <h1 className="text-center mt-4">Welcome to FoneSaver!</h1>
     </Container>
   );
 };

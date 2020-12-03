@@ -16,27 +16,29 @@ import UpdateProfile from "./components/UpdateProfile";
 
 function App() {
   return (
-    <Container>
+    <div>
       <Nav />
-      <Router>
-        <AuthProvider>
-          <Switch>
-            <Route exact path="/" component={() => <Home />} />
-            <Route path="/signup" component={() => <Signup />} />
-            <Route path="/login" component={() => <Login />} />
-            <PrivateRoute path="/account" component={() => <Account />} />
-            <Route
-              path="/forgot-password"
-              component={() => <ForgotPassword />}
-            />
-            <PrivateRoute
-              path="/update-profile"
-              component={() => <UpdateProfile />}
-            />
-          </Switch>
-        </AuthProvider>
-      </Router>
-    </Container>
+      <Container>
+        <Router>
+          <AuthProvider>
+            <Switch>
+              <Route exact path="/" component={() => <Home />} />
+              <Route path="/signup" component={() => <Signup />} />
+              <Route path="/login" component={() => <Login />} />
+              <PrivateRoute path="/account" component={() => <Account />} />
+              <Route
+                path="/forgot-password"
+                component={() => <ForgotPassword />}
+              />
+              <PrivateRoute
+                path="/update-profile"
+                component={() => <UpdateProfile />}
+              />
+            </Switch>
+          </AuthProvider>
+        </Router>
+      </Container>
+    </div>
   );
 }
 

@@ -8,11 +8,10 @@ const Navigation = () => {
       <Navbar.Brand href="/">
         <img src={logo} alt="FoneSaver Logo" id="nav-logo" />
       </Navbar.Brand>
-      <Nav>
+      <Nav className="ml-auto">
         <Nav.Link href="#about-us">About Us</Nav.Link>
         <Nav.Link href="#contact-us">Contact Us</Nav.Link>
         <Nav.Link href="/signup">Sign Up</Nav.Link>
-        <Nav.Link href="/login">Log In</Nav.Link>
       </Nav>
     </Navbar>
   );
