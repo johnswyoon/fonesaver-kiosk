@@ -11,7 +11,7 @@ const Navigation = () => {
       <Nav className="ml-auto">
         <Nav.Link href="#about-us">About Us</Nav.Link>
         <Nav.Link href="#contact-us">Contact Us</Nav.Link>
-        <Nav.Link href="/signup">Sign Up</Nav.Link>
+        <Nav.Link href="/subscribe">Subscribe</Nav.Link>
       </Nav>
     </Navbar>
   );
