@@ -7,30 +7,31 @@ import logo from "../assets/img/fonesaver-logo.png";
 const Navigation = () => {
   return (
     <StyledNav>
-      <h1>
-        <Link to="/">FONESAVER</Link>
-      </h1>
+      <div>
+        <Link to="/">
+          <img id="logo" src={logo} alt="FoneSaver Logo" />
+        </Link>
+      </div>
       <ul>
         <li>
-          <Link to="https://shop.fone-saver.com/">Shop Now</Link>
+          <a href="https://shop.fone-saver.com/" target="_notarget">
+            Shop Now
+          </a>
         </li>
         <li>
-          <Link to="https://fone-saver.com/">Corporate</Link>
+          <a href="https://fone-saver.com/" target="_notarget">
+            Corporate
+          </a>
         </li>
         <li>
-          <Link to="/subscribe">Register</Link>
+          <Link to="/about">About Us</Link>
         </li>
+        <button id="register-box" className="">
+          <Link to="/subscribe">
+            <span>Register</span>
+          </Link>
+        </button>
       </ul>
-      {/* <Navbar bg="light" variant="light" sticky="top">
-        <Navbar.Brand href="/">
-          <img src={logo} alt="FoneSaver Logo" id="nav-logo" />
-        </Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link href="#about-us">About Us</Nav.Link>
-          <Nav.Link href="#contact-us">Contact Us</Nav.Link>
-          <Nav.Link href="/subscribe">Subscribe</Nav.Link>
-        </Nav>
-      </Navbar> */}
     </StyledNav>
   );
 };
@@ -41,19 +42,39 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1.5rem 10rem;
 
   a {
-    color: black;
+    color: #444444;
     text-decoration: none;
   }
   ul {
     display: flex;
+    align-items: center;
     list-style: none;
+    padding-top: 1rem;
   }
   li {
     padding-left: 3rem;
+    /* position: relative; */
+  }
+  button {
+    margin-left: 3rem;
     position: relative;
+    span {
+      color: white;
+    }
+  }
+  #logo {
+    max-height: 7vh;
+  }
+  #register-box {
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 0.5rem 3rem;
+    background: #2b4cfc;
+    border-radius: 5px;
   }
 `;
 
