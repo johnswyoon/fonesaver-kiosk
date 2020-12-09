@@ -14,9 +14,7 @@ const Navigation = () => {
       </div>
       <ul>
         <li>
-          <a href="https://shop.fone-saver.com/" target="_notarget">
-            Shop Now
-          </a>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <a href="https://fone-saver.com/" target="_notarget">
@@ -27,9 +25,9 @@ const Navigation = () => {
           <Link to="/about">About Us</Link>
         </li>
         <button id="register-box" className="">
-          <Link to="/subscribe">
-            <span>Register</span>
-          </Link>
+          <a href="https://shop.fone-saver.com/">
+            <span>Shop Now</span>
+          </a>
         </button>
       </ul>
     </StyledNav>
@@ -72,9 +70,9 @@ const StyledNav = styled.nav`
     color: white;
     text-align: center;
     border: none;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     background: #2b4cfc;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 `;
 

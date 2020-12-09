@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Form, Button, Card, Alert, Col } from "react-bootstrap";
-import jQuery, { $ } from "jquery";
 
 const Subscribe = () => {
   return (
@@ -16,64 +14,55 @@ const Subscribe = () => {
           target="_blank"
           novalidate
         >
-          <div id="mc_embed_signup_scroll">
+          <div>
             <h2>Subscribe</h2>
-            <div className="indicates-required">
-              <span className="asterisk">*</span> indicates required
-            </div>
-            <div className="mc-field-group">
-              <label for="mce-EMAIL">
-                Email Address <span className="asterisk">*</span>
-              </label>
+            <div className="form-group mc-field-group">
+              <label for="mce-EMAIL">Email Address</label>
               <input
                 type="email"
                 name="EMAIL"
-                className="required email"
+                className="form-control email"
+                placeholder="Enter Email"
                 id="mce-EMAIL"
+                required
               />
+              <small id="emailHelp" class="form-text text-muted">
+                We'll never share your email with anyone else.
+              </small>
             </div>
-            <div className="mc-field-group">
-              <label for="mce-FNAME">
-                First Name <span className="asterisk">*</span>
-              </label>
+            <div className="form-group mc-field-group">
+              <label for="mce-FNAME">First Name</label>
               <input
                 type="text"
                 name="FNAME"
-                className="required"
+                className="form-control"
+                placeholder="Enter first name"
                 id="mce-FNAME"
+                required
               />
             </div>
-            <div className="mc-field-group">
-              <label for="mce-LNAME">
-                Last Name <span className="asterisk">*</span>
-              </label>
+            <div className="form-group mc-field-group">
+              <label for="mce-LNAME">Last Name</label>
               <input
                 type="text"
                 name="LNAME"
-                className="required"
+                className="form-control"
                 id="mce-LNAME"
+                placeholder="Enter last name"
+                required
               />
             </div>
-            <div className="mc-address-group">
+            <div className="form-group mc-address-group">
               <div className="mc-field-group">
-                <label for="mce-ADDRESS-addr1">
-                  Address <span className="asterisk">*</span>
-                </label>
+                <label for="mce-ADDRESS-addr1">Address</label>
                 <input
                   type="text"
                   maxlength="70"
                   name="ADDRESS[addr1]"
                   id="mce-ADDRESS-addr1"
-                  className="required"
-                />
-              </div>
-              <div className="mc-field-group">
-                <label for="mce-ADDRESS-addr2">Address Line 2</label>
-                <input
-                  type="text"
-                  maxlength="70"
-                  name="ADDRESS[addr2]"
-                  id="mce-ADDRESS-addr2"
+                  className="form-control"
+                  placeholder="Enter address"
+                  required
                 />
               </div>
               <div className="mc-field-group size1of2">
@@ -83,7 +72,9 @@ const Subscribe = () => {
                   maxlength="40"
                   name="ADDRESS[city]"
                   id="mce-ADDRESS-city"
-                  className="required"
+                  className="form-control"
+                  placeholder="Enter city"
+                  required
                 />
               </div>
               <div className="mc-field-group size1of2">
@@ -93,7 +84,9 @@ const Subscribe = () => {
                   maxlength="20"
                   name="ADDRESS[state]"
                   id="mce-ADDRESS-state"
-                  className="required"
+                  class="form-control"
+                  placeholder="Enter region"
+                  required
                 />
               </div>
               <div className="mc-field-group size1of2">
@@ -103,7 +96,9 @@ const Subscribe = () => {
                   maxlength="10"
                   name="ADDRESS[zip]"
                   id="mce-ADDRESS-zip"
-                  className="required"
+                  className="form-control"
+                  placeholder="Enter zip code"
+                  required
                 />
               </div>
               <div className="mc-field-group size1of2">
@@ -111,7 +106,8 @@ const Subscribe = () => {
                 <select
                   name="ADDRESS[country]"
                   id="mce-ADDRESS-country"
-                  className="required"
+                  class="form-control"
+                  required
                 >
                   <option value="164" selected>
                     USA
@@ -121,14 +117,14 @@ const Subscribe = () => {
               </div>
             </div>
             <div className="mc-field-group size1of2">
-              <label for="mce-PHONE">
-                Phone Number <span className="asterisk">*</span>
-              </label>
+              <label for="mce-PHONE">Phone Number</label>
               <input
                 type="text"
                 name="PHONE"
-                className="required"
                 id="mce-PHONE"
+                className="form-control"
+                required
+                placeholder="Enter phone number"
               />
             </div>
             <div id="mce-responses" className="clear">
@@ -149,7 +145,7 @@ const Subscribe = () => {
                 value="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                className="button"
+                className="button btn btn-primary w-100 mt-3"
               />
             </div>
           </div>
