@@ -25,7 +25,7 @@ const Navigation = () => {
           <Link to="/about">About Us</Link>
         </li>
         <button id="register-box" className="">
-          <a href="https://shop.fone-saver.com/">
+          <a href="https://shop.fone-saver.com/" target="_notarget">
             <span>Shop Now</span>
           </a>
         </button>

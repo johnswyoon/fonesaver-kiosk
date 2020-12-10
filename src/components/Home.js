@@ -53,7 +53,11 @@ const Home = () => {
           store!
         </p>
         <button className="btn btn-primary btn-lg">
-          <a href="https://shop.fone-saver.com/" className="text-white">
+          <a
+            href="https://shop.fone-saver.com/"
+            target="_notarget"
+            className="text-white"
+          >
             Shop Now
           </a>
         </button>
