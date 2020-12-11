@@ -2,7 +2,7 @@ import React from "react";
 import BrandSlider from "./BrandSlider";
 import styled from "styled-components";
 import phoneFlat from "../assets/img/phoneFlat.svg";
-import x100 from "../assets/img/x100-transparent.png";
+import x100 from "../assets/img/x100-warp.png";
 
 const Home = () => {
   return (
@@ -88,7 +88,7 @@ const FoneSaverTitle = styled.span`
 const InfoContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 1rem 20rem;
   p {
     padding: 0.5rem 0rem;
@@ -109,7 +109,8 @@ const InfoContainer = styled.div`
 
 const InfoText = styled.div`
   display: block;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  /* padding-bottom: 3rem; */
 `;
 
 export default Home;
