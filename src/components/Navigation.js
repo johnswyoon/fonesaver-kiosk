@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
 import logo from "../assets/img/fonesaver-logo.png";
+import facebook from "../assets/socials/facebook.png";
+import twitter from "../assets/socials/twitter.png";
+import instagram from "../assets/socials/instagram.png";
 
 const Navigation = () => {
   return (
@@ -24,6 +26,27 @@ const Navigation = () => {
         <li>
           <Link to="/about">About Us</Link>
         </li>
+        {/* <li>
+          <a
+            href="https://www.facebook.com/FoneSaverService/"
+            target="_notarget"
+          >
+            <img src={facebook} alt="Facebook" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/FoneSaver" target="_notarget">
+            <img src={twitter} alt="Twitter" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/fonesaver/" target="_notarget">
+            <img src={instagram} alt="Instagram" />
+          </a>
+        </li> */}
+
         <button id="register-box" className="">
           <a href="https://shop.fone-saver.com/" target="_notarget">
             <span>Shop Now</span>
@@ -55,6 +78,12 @@ const StyledNav = styled.nav`
   li {
     padding-left: 3rem;
     /* position: relative; */
+    img {
+      min-width: 40px;
+      padding: 0rem;
+      width: 20%;
+      border-radius: 15px;
+    }
   }
   button {
     margin-left: 3rem;
