@@ -1,15 +1,15 @@
 import React from "react";
 import BrandSlider from "./BrandSlider";
 import styled from "styled-components";
-import phoneFlat from "../assets/img/phoneFlat.svg";
+import shopper from "../assets/img/shopper.svg";
 import x100 from "../assets/img/x100-warp.png";
 
 const Home = () => {
   return (
-    <div>
+    <MainContainer>
       <HeroContainer>
-        <div className="mt-5 mr-5">
-          <div className="mr-5">
+        <div>
+          <div>
             <h2>Introducing the </h2>
             <h2>
               <FoneSaverTitle>FoneSaver </FoneSaverTitle>
@@ -23,11 +23,11 @@ const Home = () => {
           </p>
         </div>
         <HeroImage>
-          <img src={phoneFlat} alt="Man holding a phone" />
+          <img id="x100" src={x100} alt="FoneSaver X100" />
         </HeroImage>
       </HeroContainer>
       <InfoContainer>
-        <img id="x100" src={x100} alt="FoneSaver X100" />
+        <img src={shopper} alt="Man holding a phone" />
         <InfoText>
           <p>
             It always seems to happen at the worst time, you’re battery dies and
@@ -50,7 +50,7 @@ const Home = () => {
             To sign up, see and purchase our other exciting products, visit our
             store!
           </p>
-          <button className="btn btn-primary btn-lg">
+          <button className="btn btn-primary">
             <a
               href="https://shop.fone-saver.com/"
               target="_notarget"
@@ -61,23 +61,78 @@ const Home = () => {
           </button>
         </InfoText>
       </InfoContainer>
-      <BrandSlider />
-    </div>
+      {/* <BrandSlider /> */}
+    </MainContainer>
   );
 };
+
+const MainContainer = styled.div`
+  display: block;
+`;
 
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5rem 25rem;
+  @media (max-width: 1675px) {
+    padding: 5rem 20rem;
+  }
+  @media (max-width: 1500px) {
+    padding: 5rem 15rem;
+  }
+  @media (max-width: 1290px) {
+    padding: 5rem 10rem;
+  }
+  @media (max-width: 1100px) {
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 878px) {
+    flex-direction: column;
+    padding: 3rem 8rem 5rem 8rem;
+  }
+  @media (max-width: 650px) {
+    padding: 3rem 3rem 5rem 3rem;
+  }
+  @media (max-width: 500px) {
+    padding: 3rem 2rem 5rem 2rem;
+  }
 `;
 
 const HeroImage = styled.div`
   img {
-    width: 25vw;
+    width: 17vw;
     object-fit: cover;
     padding-left: 5rem;
+    @media (max-width: 1450px) {
+      width: 19vw;
+    }
+    @media (max-width: 1200px) {
+      width: 21vw;
+    }
+    @media (max-width: 950px) {
+      width: 25vw;
+    }
+    @media (max-width: 878px) {
+      display: block;
+      margin: auto;
+      width: 25vw;
+      padding-top: 2.5rem;
+      padding-left: 0;
+    }
+    @media (max-width: 878px) {
+      display: block;
+      margin: auto;
+      width: 25vw;
+      padding-top: 2.5rem;
+      padding-left: 0;
+    }
+    @media (max-width: 550px) {
+      width: 30vw;
+    }
+    @media (max-width: 400px) {
+      width: 40vw;
+    }
   }
 `;
 
@@ -88,8 +143,20 @@ const FoneSaverTitle = styled.span`
 const InfoContainer = styled.div`
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  padding: 1rem 20rem;
+  padding: 5rem 20rem 0rem 20rem;
+  @media (max-width: 1675px) {
+    padding: 5rem 15rem 0rem 15rem;
+  }
+  @media (max-width: 1500px) {
+    padding: 5rem 10rem 0rem 10rem;
+  }
+  @media (max-width: 1100px) {
+    padding: 5rem 7rem 0rem 7rem;
+  }
+  @media (max-width: 878px) {
+    display: block;
+    padding: 5rem 7rem 0rem 7rem;
+  }
   p {
     padding: 0.5rem 0rem;
   }
@@ -104,13 +171,28 @@ const InfoContainer = styled.div`
   #x100 {
     padding-right: 5rem;
     max-height: 50rem;
+    @media (max-width: 1675px) {
+      max-height: 43rem;
+    }
+    @media (max-width: 1290px) {
+      max-height: 40rem;
+    }
+    @media (max-width: 1100px) {
+      padding-right: 2rem;
+      max-height: 40rem;
+    }
+    @media (max-width: 878px) {
+      display: block;
+      margin: auto;
+      max-height: 30rem;
+      padding-right: 0rem;
+    }
   }
 `;
 
 const InfoText = styled.div`
   display: block;
   padding-top: 1rem;
-  /* padding-bottom: 3rem; */
 `;
 
 export default Home;

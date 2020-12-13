@@ -14,6 +14,8 @@ function Footer() {
 const StyledFooter = styled.footer`
   position: sticky;
   margin-top: 2rem;
+  @media (min-width: 576px) {
+  }
 `;
 
 export default Footer;

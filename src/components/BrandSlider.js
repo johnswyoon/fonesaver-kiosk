@@ -7,9 +7,9 @@ function BrandSlider() {
       <h2 class="text-center">
         <strong>Partners with Global Brands</strong>
       </h2>
-      <h3 class="text-center">
+      <p class="text-center">
         We provide solutions to some of the largest brands from every industry
-      </h3>
+      </p>
       <div id="slider">
         <figure>
           <img

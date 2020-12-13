@@ -9,7 +9,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
+    <div id="main-container">
       <Nav />
       <Switch>
         <Route exact path="/" component={() => <Home />} />
