@@ -56,7 +56,7 @@ const Home = () => {
               target="_notarget"
               className="text-white"
             >
-              Shop Now
+              <p>Shop Now</p>
             </a>
           </button>
         </InfoText>
@@ -157,6 +157,9 @@ const InfoContainer = styled.div`
     display: block;
     padding: 5rem 7rem 0rem 7rem;
   }
+  @media (max-width: 550px) {
+    padding: 5rem 3rem 0rem 3rem;
+  }
   p {
     padding: 0.5rem 0rem;
   }
@@ -164,8 +167,12 @@ const InfoContainer = styled.div`
     border-radius: 30px;
     margin-top: 1rem;
     a {
-      font-size: 1.5rem;
       text-decoration: none;
+      p {
+        color: white;
+        padding: 0rem;
+        margin: 0rem;
+      }
     }
   }
   #x100 {
