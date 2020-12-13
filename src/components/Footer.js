@@ -13,7 +13,7 @@ function Footer() {
 
 const StyledFooter = styled.footer`
   position: sticky;
-  margin-top: 2rem;
+  margin-top: 3rem;
   @media (min-width: 576px) {
   }
 `;

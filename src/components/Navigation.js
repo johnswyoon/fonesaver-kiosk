@@ -23,7 +23,7 @@ const Navigation = () => {
           <span class="bar"></span>
         </ToggleButton>
       </div>
-      <div className={isOpen ? "navbar-links" : "navbar-links active"}>
+      <div className={isOpen ? "navbar-links active" : "navbar-links"}>
         <ul>
           <li>
             <Link to="/">Home</Link>
