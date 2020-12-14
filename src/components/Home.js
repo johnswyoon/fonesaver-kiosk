@@ -90,15 +90,16 @@ const HeroContainer = styled.div`
   @media (max-width: 1100px) {
     padding: 5rem 5rem;
   }
+  //change
   @media (max-width: 878px) {
     flex-direction: column;
-    padding: 3rem 8rem 5rem 8rem;
+    padding: 3rem 8rem 3rem 8rem;
   }
   @media (max-width: 650px) {
-    padding: 3rem 3rem 5rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
   }
   @media (max-width: 500px) {
-    padding: 3rem 2rem 5rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
   }
 `;
 
@@ -222,7 +223,7 @@ const MobileIllustration = styled.div`
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 3rem;
     width: 30vw;
   }
