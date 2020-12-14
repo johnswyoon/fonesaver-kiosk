@@ -135,12 +135,11 @@ const ToggleButton = styled.a`
   .bar {
     height: 3px;
     width: 100%;
-    background-color: black;
-    border-radius: 10px;
+    background-color: #333333;
+    border-radius: 15px;
   }
   @media (max-width: 950px) {
     display: flex;
-    align-items: center;
   }
 `;
 

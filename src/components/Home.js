@@ -27,7 +27,7 @@ const Home = () => {
         </HeroImage>
       </HeroContainer>
       <InfoContainer>
-        <img src={shopper} alt="Man holding a phone" />
+        <img id="desktop-image" src={shopper} alt="Man holding a phone" />
         <InfoText>
           <p>
             It always seems to happen at the worst time, you’re battery dies and
@@ -60,6 +60,9 @@ const Home = () => {
             </a>
           </button>
         </InfoText>
+        <MobileIllustration>
+          <img id="mobile-image" src={shopper} alt="Man holding a phone" />
+        </MobileIllustration>
       </InfoContainer>
       {/* <BrandSlider /> */}
     </MainContainer>
@@ -150,15 +153,20 @@ const InfoContainer = styled.div`
   @media (max-width: 1500px) {
     padding: 5rem 10rem 0rem 10rem;
   }
+  @media (max-width: 1350px) {
+    padding: 3rem 8rem 0rem 8rem;
+  }
   @media (max-width: 1100px) {
-    padding: 5rem 7rem 0rem 7rem;
+    padding: 2rem 7rem 0rem 7rem;
+  }
+  @media (max-width: 1000px) {
+    display: block;
   }
   @media (max-width: 878px) {
-    display: block;
-    padding: 5rem 7rem 0rem 7rem;
+    padding: 0rem 5rem 0rem 5rem;
   }
   @media (max-width: 550px) {
-    padding: 5rem 3rem 0rem 3rem;
+    padding: 0rem 3rem 0rem 3rem;
   }
   p {
     padding: 0.5rem 0rem;
@@ -175,24 +183,31 @@ const InfoContainer = styled.div`
       }
     }
   }
-  #x100 {
-    padding-right: 5rem;
-    max-height: 50rem;
+  #desktop-image {
+    width: 50vw;
+    padding-right: 10rem;
+    @media (max-width: 1800px) {
+      width: 60vw;
+      padding-right: 5rem;
+    }
     @media (max-width: 1675px) {
-      max-height: 43rem;
+      width: 40vw;
+      padding-right: 5rem;
     }
-    @media (max-width: 1290px) {
-      max-height: 40rem;
+    @media (max-width: 1450px) {
+      width: 50vw;
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1250px) {
+      width: 60vw;
+      padding-right: 3rem;
+    }
+    @media (max-width: 1050px) {
+      width: 75vw;
       padding-right: 2rem;
-      max-height: 40rem;
     }
-    @media (max-width: 878px) {
-      display: block;
-      margin: auto;
-      max-height: 30rem;
-      padding-right: 0rem;
+    //change
+    @media (max-width: 1000px) {
+      display: none;
     }
   }
 `;
@@ -200,6 +215,23 @@ const InfoContainer = styled.div`
 const InfoText = styled.div`
   display: block;
   padding-top: 1rem;
+`;
+
+const MobileIllustration = styled.div`
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 3rem;
+    width: 30vw;
+  }
+  @media (max-width: 650px) {
+    width: 40vw;
+  }
+  @media (max-width: 500px) {
+    width: 45vw;
+  }
 `;
 
 export default Home;
