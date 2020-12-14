@@ -223,7 +223,7 @@ const MobileIllustration = styled.div`
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 3rem;
     width: 30vw;
   }
