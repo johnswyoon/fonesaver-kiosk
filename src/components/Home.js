@@ -209,6 +209,7 @@ const InfoContainer = styled.div`
     //change
     @media (max-width: 1000px) {
       display: none;
+      padding: 0;
     }
   }
 `;
@@ -219,19 +220,22 @@ const InfoText = styled.div`
 `;
 
 const MobileIllustration = styled.div`
-  display: none;
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding-top: 3rem;
-    width: 30vw;
-  }
-  @media (max-width: 650px) {
-    width: 40vw;
-  }
-  @media (max-width: 500px) {
-    width: 45vw;
+  img {
+    display: none;
+    object-fit: cover;
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      padding-top: 3rem;
+      width: 30vw;
+    }
+    @media (max-width: 650px) {
+      width: 40vw;
+    }
+    @media (max-width: 500px) {
+      width: 45vw;
+    }
   }
 `;
 
