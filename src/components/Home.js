@@ -187,6 +187,7 @@ const InfoContainer = styled.div`
   #desktop-image {
     width: 50vw;
     padding-right: 10rem;
+    margin: 0;
     @media (max-width: 1800px) {
       width: 60vw;
       padding-right: 5rem;
