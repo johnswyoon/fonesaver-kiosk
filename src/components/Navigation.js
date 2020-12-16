@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/img/fonesaver-logo.png";
-import facebook from "../assets/socials/facebook.png";
-import twitter from "../assets/socials/twitter.png";
-import instagram from "../assets/socials/instagram.png";
+import logo from "../assets/img/white-logo.png";
+// import facebook from "../assets/socials/facebook.png";
+// import twitter from "../assets/socials/twitter.png";
+// import instagram from "../assets/socials/instagram.png";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
@@ -65,7 +65,8 @@ const StyledNav = styled.nav`
     }
   }
   a {
-    color: #444444;
+    /* color: #444444; */
+    color: white;
     text-decoration: none;
   }
   ul {

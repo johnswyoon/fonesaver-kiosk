@@ -6,10 +6,12 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 // import Subscribe from "./components/Subscribe";
 // import About from "./components/About";
+import background from "./assets/img/groupPeople-crop.png";
 
 function App() {
   return (
     <div id="main-container">
+      <img id="background-img" src={background} alt="background-image" />
       <Nav />
       <Switch>
         <Route exact path="/" component={() => <Home />} />

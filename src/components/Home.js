@@ -2,11 +2,13 @@ import React from "react";
 import BrandSlider from "./BrandSlider";
 import styled from "styled-components";
 import shopper from "../assets/img/shopper.svg";
-import x100 from "../assets/img/x100-warp.png";
+import x100 from "../assets/img/new-x100.png";
+import background from "../assets/img/groupPeople.png";
 
 const Home = () => {
   return (
     <MainContainer>
+      {/* <img id="background-image" src={background} alt="background-image" /> */}
       <HeroContainer>
         <div>
           <div>
@@ -70,14 +72,18 @@ const Home = () => {
 };
 
 const MainContainer = styled.div`
-  display: block;
+  #background-image {
+    width: 100%;
+    z-index: -10;
+    position: absolute;
+  }
 `;
 
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 25rem;
+  padding: 2rem 25rem;
   @media (max-width: 1675px) {
     padding: 5rem 20rem;
   }
@@ -100,6 +106,9 @@ const HeroContainer = styled.div`
   }
   @media (max-width: 500px) {
     padding: 3rem 2rem 2rem 2rem;
+  }
+  p {
+    color: white;
   }
 `;
 
@@ -141,7 +150,8 @@ const HeroImage = styled.div`
 `;
 
 const FoneSaverTitle = styled.span`
-  color: #2b4cfc;
+  /* color: #2b4cfc; */
+  color: white;
 `;
 
 const InfoContainer = styled.div`
