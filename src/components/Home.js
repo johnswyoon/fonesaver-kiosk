@@ -2,13 +2,11 @@ import React from "react";
 import BrandSlider from "./BrandSlider";
 import styled from "styled-components";
 import shopper from "../assets/img/shopper.svg";
-import x100 from "../assets/img/new-x100.png";
-import background from "../assets/img/groupPeople.png";
+import x100 from "../assets/img/compressed/new-x100-min.png";
 
 const Home = () => {
   return (
     <MainContainer>
-      {/* <img id="background-image" src={background} alt="background-image" /> */}
       <HeroContainer>
         <div>
           <div>
