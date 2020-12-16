@@ -17,7 +17,7 @@ const Home = () => {
               <FoneSaverTitle>FoneSaver </FoneSaverTitle>
               charging
             </h2>
-            <h2>on the go kiosk</h2>
+            <h2>on-the-go kiosk</h2>
           </div>
           <p>
             In the next few months, you will see our convenient portable
@@ -32,7 +32,7 @@ const Home = () => {
         <img id="desktop-image" src={shopper} alt="Man holding a phone" />
         <InfoText>
           <p>
-            It always seems to happen at the worst time, you’re battery dies and
+            It always seems to happen at the worst time, your battery dies and
             you’re stuck. Not anymore. Look for one of the FoneSaver kiosks and
             rent a charger to take with you on-the-go.
           </p>
@@ -116,11 +116,11 @@ const HeroContainer = styled.div`
 
 const HeroImage = styled.div`
   img {
-    width: 17vw;
+    width: 18vw;
     object-fit: cover;
     padding-left: 5rem;
     @media (max-width: 1450px) {
-      width: 19vw;
+      width: 21vw;
     }
     @media (max-width: 1200px) {
       width: 21vw;
@@ -146,7 +146,7 @@ const HeroImage = styled.div`
       width: 30vw;
     }
     @media (max-width: 400px) {
-      width: 40vw;
+      width: 45vw;
     }
   }
 `;
@@ -159,7 +159,8 @@ const FoneSaverTitle = styled.span`
 const InfoContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 5rem 20rem 0rem 20rem;
+  align-items: center;
+  padding: 8rem 20rem 0rem 20rem;
   @media (max-width: 1675px) {
     padding: 5rem 15rem 0rem 15rem;
   }
@@ -202,7 +203,7 @@ const InfoContainer = styled.div`
   #desktop-image {
     width: 50vw;
     padding-right: 10rem;
-    margin: 0;
+    object-fit: cover;
     @media (max-width: 1800px) {
       width: 60vw;
       padding-right: 5rem;
