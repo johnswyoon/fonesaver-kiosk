@@ -83,29 +83,31 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 25rem;
+  padding: 0rem 25rem;
   @media (max-width: 1675px) {
-    padding: 5rem 20rem;
+    padding: 2rem 20rem;
   }
   @media (max-width: 1500px) {
-    padding: 5rem 15rem;
+    padding: 0rem 15rem;
   }
   @media (max-width: 1290px) {
-    padding: 5rem 10rem;
+    padding: 0rem 10rem;
   }
   @media (max-width: 1100px) {
-    padding: 5rem 5rem;
+    padding: 0rem 5rem;
+    align-items: flex-start;
   }
   //change
   @media (max-width: 878px) {
     flex-direction: column;
-    padding: 3rem 8rem 3rem 8rem;
+    align-items: center;
+    padding: 1rem 8rem 1rem 8rem;
   }
   @media (max-width: 650px) {
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
   }
   @media (max-width: 500px) {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
   p {
     color: white;
@@ -130,14 +132,14 @@ const HeroImage = styled.div`
       display: block;
       margin: auto;
       width: 25vw;
-      padding-top: 2.5rem;
+      /* padding-top: 2.5rem; */
       padding-left: 0;
     }
     @media (max-width: 878px) {
       display: block;
       margin: auto;
       width: 25vw;
-      padding-top: 2.5rem;
+      /* padding-top: 2.5rem; */
       padding-left: 0;
     }
     @media (max-width: 550px) {
@@ -165,6 +167,9 @@ const InfoContainer = styled.div`
     padding: 5rem 10rem 0rem 10rem;
   }
   @media (max-width: 1350px) {
+    padding: 5rem 8rem 0rem 8rem;
+  }
+  @media (max-width: 1200px) {
     padding: 3rem 8rem 0rem 8rem;
   }
   @media (max-width: 1100px) {

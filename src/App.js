@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 // import Subscribe from "./components/Subscribe";
 // import About from "./components/About";
-import background from "./assets/img/groupPeople-crop.png";
+import background from "./assets/img/groupPeople.png";
 
 function App() {
   return (
