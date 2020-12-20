@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <MainContainer>
       <HeroContainer>
-        <div>
+        <div id="main-text">
           <div>
             <h2>Introducing the </h2>
             <h2>
@@ -82,8 +82,19 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0rem 25rem;
+  @media (max-width: 2000px) {
+    padding: 2rem 20rem 0rem 20rem;
+    align-items: flex-start;
+    #main-text {
+      padding-top: 5rem;
+    }
+  }
   @media (max-width: 1675px) {
-    padding: 2rem 20rem;
+    padding: 2rem 20rem 0rem 20rem;
+    align-items: flex-start;
+    #main-text {
+      padding-top: 3.5rem;
+    }
   }
   @media (max-width: 1500px) {
     padding: 0rem 15rem;
@@ -117,26 +128,23 @@ const HeroImage = styled.div`
     width: 18vw;
     object-fit: cover;
     padding-left: 5rem;
-    @media (max-width: 1450px) {
+    @media (max-width: 2000px) {
       width: 21vw;
+      margin-left: 10rem;
+    }
+    @media (max-width: 1450px) {
+      width: 25vw;
     }
     @media (max-width: 1200px) {
-      width: 21vw;
+      width: 30vw;
     }
     @media (max-width: 950px) {
-      width: 25vw;
+      width: 35vw;
     }
     @media (max-width: 878px) {
       display: block;
       margin: auto;
-      width: 25vw;
-      /* padding-top: 2.5rem; */
-      padding-left: 0;
-    }
-    @media (max-width: 878px) {
-      display: block;
-      margin: auto;
-      width: 25vw;
+      width: 30vw;
       /* padding-top: 2.5rem; */
       padding-left: 0;
     }
@@ -160,13 +168,13 @@ const InfoContainer = styled.div`
   align-items: center;
   padding: 8rem 20rem 0rem 20rem;
   @media (max-width: 1675px) {
-    padding: 5rem 15rem 0rem 15rem;
+    padding: 3rem 15rem 0rem 15rem;
   }
   @media (max-width: 1500px) {
-    padding: 5rem 10rem 0rem 10rem;
+    padding: 3rem 10rem 0rem 10rem;
   }
   @media (max-width: 1350px) {
-    padding: 5rem 8rem 0rem 8rem;
+    padding: 3rem 8rem 0rem 8rem;
   }
   @media (max-width: 1200px) {
     padding: 3rem 8rem 0rem 8rem;
