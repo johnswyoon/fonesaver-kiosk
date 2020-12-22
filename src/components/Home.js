@@ -114,9 +114,12 @@ const HeroContainer = styled.div`
   }
   @media (max-width: 650px) {
     padding: 1rem 3rem 1rem 3rem;
+    #main-text {
+      padding-top: 1rem;
+    }
   }
   @media (max-width: 500px) {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
   }
   p {
     color: white;
